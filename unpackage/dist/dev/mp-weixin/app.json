@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/circle/circle",
+    "pages/news/news",
+    "pages/mine/mine",
+    "pages/middle/middle",
+    "pages/info/info",
+    "pages/index/old-colleage/old-colleage",
+    "pages/index/travel/travel",
+    "pages/index/wish/wish",
+    "pages/index/age-org/age-org",
+    "pages/index/job/job",
+    "pages/index/shop/shop",
+    "pages/index/all/all",
+    "pages/circle/dynamic/dynamic"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorTop": "#007AFF"
+  },
+  "tabBar": {
+    "color": "#1B1B1B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "static/img/indexSelected.png",
+        "iconPath": "static/img/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "iconPath": "static/img/circle.png",
+        "selectedIconPath": "static/img/circleSelected.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/middle/middle",
+        "iconPath": "static/img/add.png",
+        "selectedIconPath": "static/img/addactive.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "iconPath": "static/img/news.png",
+        "selectedIconPath": "static/img/newsSelected.png",
+        "text": "消息",
+        "backgroundColor": "#f00"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/img/mine.png",
+        "selectedIconPath": "static/img/mineSelected.png",
+        "text": "我的",
+        "color": "#fff"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap99.json"
+}

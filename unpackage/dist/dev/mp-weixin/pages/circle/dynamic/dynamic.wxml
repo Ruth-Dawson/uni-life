@@ -1,0 +1,1 @@
+<view class="content data-v-f273e3de"><view class="sort data-v-f273e3de"><block wx:for="{{btns}}" wx:for-item="item" wx:for-index="index" wx:key="id"><button class="{{['btn data-v-f273e3de',btnActive==index?'btnActive':'']}}" type="default" data-current="{{index}}" data-event-opts="{{[['tap',[['sort',['$event']]]]]}}" bindtap="__e">{{item.name}}</button></block></view></view>
