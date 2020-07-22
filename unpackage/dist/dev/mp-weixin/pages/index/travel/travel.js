@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/travel/travel"],{
 
-/***/ 102:
+/***/ 104:
 /*!******************************************************************************!*\
   !*** E:/website/uni-life/main.js?{"page":"pages%2Findex%2Ftravel%2Ftravel"} ***!
   \******************************************************************************/
@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} //
 //
 //
 //
@@ -314,12 +314,13 @@ var _default =
       }
     },
 
-    waterfall: function waterfall() {
+    waterfall: function waterfall() {var _this$cardListLeft, _this$cardListRight;
       console.log("哈哈");
       this.cardList = this.allcardList.slice(0, 4); //初始化图片显示
       console.log(this.cardList);
-      this.cardListLeft.push(this.cardList[0], this.cardList[1], this.cardList[2], this.cardList[3]); //初始化左侧显示一个
-      // console.log(this.cardListLeft);
+      (_this$cardListLeft = this.cardListLeft).push.apply(_this$cardListLeft, _toConsumableArray(this.cardList)); //初始化左侧显示四个
+      (_this$cardListRight = this.cardListRight).push.apply(_this$cardListRight, _toConsumableArray(this.cardList)); //初始化左侧显示四个
+      console.log(this.cardListLeft);
       this.preLoadImg = this.cardList[0].url;
       var that = this;
       uni.getSystemInfo({ //利用uni-APP获取系统信息Api，获取客户端的屏幕高度，设置成scoll-view的高度，实现触底事件
@@ -330,24 +331,24 @@ var _default =
     },
 
     loadMore: function loadMore() {
-      // if(this.loadMoreTemp == 1){			//loadMoreTemp==1,才允许触发
-      // 	console.log("loadMore");
-      // 	this.loadMoreTemp = 0;			//防止多次触发
+      if (this.loadMoreTemp == 1) {//loadMoreTemp==1,才允许触发
+        console.log("loadMore");
+        this.loadMoreTemp = 0; //防止多次触发
 
-      // 	let newcardList = this.allcardList.slice(this.cardListItem,this.cardListItem+4);//模拟后端接口返回四个新的数据
+        var newcardList = this.allcardList.slice(this.cardListItem, this.cardListItem + 4); //模拟后端接口返回四个新的数据
 
-      // 	//console.log(newcardList);
-      // 	if(!newcardList.length == 0){				//判断是否还有新数据
-      // 		this.cardList = this.cardList.concat(newcardList);			//返回的新数据加到当前的cardList
-      // 		if(this.cardLeftHeight > this.cardRightHeight){				//把第一个新数据加到目前更低的栏上，以触发@load="onImageLoad"
-      // 			this.cardListRight.push(newcardList[0]);			
-      // 		}else{
-      // 			this.cardListLeft.push(newcardList[0]);
-      // 		}
-      // 	}else{
-      // 		this.showNoMore = true;				//没有新数据就显示到底了
-      // 	}
-      // }
+        //console.log(newcardList);
+        if (!newcardList.length == 0) {//判断是否还有新数据
+          this.cardList = this.cardList.concat(newcardList); //返回的新数据加到当前的cardList
+          if (this.cardLeftHeight > this.cardRightHeight) {//把第一个新数据加到目前更低的栏上，以触发@load="onImageLoad"
+            this.cardListRight.push(newcardList[0]);
+          } else {
+            this.cardListLeft.push(newcardList[0]);
+          }
+        } else {
+          this.showNoMore = true; //没有新数据就显示到底了
+        }
+      }
     },
 
     showModule: function showModule(index) {
@@ -388,5 +389,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[[102,"common/runtime","common/vendor"]]]);
+},[[104,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/travel/travel.js.map

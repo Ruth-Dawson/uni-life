@@ -186,8 +186,9 @@
 				console.log("哈哈");
 				this.cardList = this.allcardList.slice(0,4);		//初始化图片显示
 				console.log(this.cardList);
-				this.cardListLeft.push(this.cardList[0],this.cardList[1],this.cardList[2],this.cardList[3]);			//初始化左侧显示一个
-				// console.log(this.cardListLeft);
+				this.cardListLeft.push(...this.cardList);			//初始化左侧显示四个
+				this.cardListRight.push(...this.cardList);			//初始化左侧显示四个
+				console.log(this.cardListLeft);
 				this.preLoadImg = this.cardList[0].url;
 				var that = this;
 				uni.getSystemInfo({		//利用uni-APP获取系统信息Api，获取客户端的屏幕高度，设置成scoll-view的高度，实现触底事件
@@ -198,24 +199,24 @@
 			},
 			
 			loadMore(){
-				// if(this.loadMoreTemp == 1){			//loadMoreTemp==1,才允许触发
-				// 	console.log("loadMore");
-				// 	this.loadMoreTemp = 0;			//防止多次触发
+				if(this.loadMoreTemp == 1){			//loadMoreTemp==1,才允许触发
+					console.log("loadMore");
+					this.loadMoreTemp = 0;			//防止多次触发
 					
-				// 	let newcardList = this.allcardList.slice(this.cardListItem,this.cardListItem+4);//模拟后端接口返回四个新的数据
+					let newcardList = this.allcardList.slice(this.cardListItem,this.cardListItem+4);//模拟后端接口返回四个新的数据
 					
-				// 	//console.log(newcardList);
-				// 	if(!newcardList.length == 0){				//判断是否还有新数据
-				// 		this.cardList = this.cardList.concat(newcardList);			//返回的新数据加到当前的cardList
-				// 		if(this.cardLeftHeight > this.cardRightHeight){				//把第一个新数据加到目前更低的栏上，以触发@load="onImageLoad"
-				// 			this.cardListRight.push(newcardList[0]);			
-				// 		}else{
-				// 			this.cardListLeft.push(newcardList[0]);
-				// 		}
-				// 	}else{
-				// 		this.showNoMore = true;				//没有新数据就显示到底了
-				// 	}
-				// }
+					//console.log(newcardList);
+					if(!newcardList.length == 0){				//判断是否还有新数据
+						this.cardList = this.cardList.concat(newcardList);			//返回的新数据加到当前的cardList
+						if(this.cardLeftHeight > this.cardRightHeight){				//把第一个新数据加到目前更低的栏上，以触发@load="onImageLoad"
+							this.cardListRight.push(newcardList[0]);			
+						}else{
+							this.cardListLeft.push(newcardList[0]);
+						}
+					}else{
+						this.showNoMore = true;				//没有新数据就显示到底了
+					}
+				}
 			},
 			
 			showModule(index){

@@ -31,10 +31,4 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.content .left.data-v-56408d81,
-.content .right.data-v-56408d81 {
-  -webkit-flex-basis: 360rpx;
-          flex-basis: 360rpx;
-  border: 2rpx solid red;
-}
 

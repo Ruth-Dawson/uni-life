@@ -1,11 +1,6 @@
 <template>
 	<view class="content">
-			<view class="left">
-				左
-			</view>
-			<view class="right">
-				右
-			</view>
+		愿望清单
 	</view>
 </template>
 
@@ -23,10 +18,5 @@
 	.content{
 		display: flex;
 		flex-wrap: wrap;
-		.left,
-		.right{
-			flex-basis: 360rpx;
-			border: 2rpx solid red;
-		}
 	}
 </style>

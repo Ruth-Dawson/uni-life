@@ -79,7 +79,7 @@
 							</view>
 							<view class="right">
 								<view class="title">
-									<text>基础版手工制作学习【面授hah】</text></view>
+									<text>基础版手工制作学习【面授hahA】</text></view>
 								<view class="area">
 									<text>秦淮区</text>
 								</view>

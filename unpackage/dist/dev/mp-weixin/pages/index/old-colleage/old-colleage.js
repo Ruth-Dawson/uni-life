@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/old-colleage/old-colleage"],{
 
-/***/ 101:
+/***/ 103:
 /*!******************************************************************************************!*\
   !*** E:/website/uni-life/main.js?{"page":"pages%2Findex%2Fold-colleage%2Fold-colleage"} ***!
   \******************************************************************************************/
@@ -230,5 +230,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[[101,"common/runtime","common/vendor"]]]);
+},[[103,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/old-colleage/old-colleage.js.map

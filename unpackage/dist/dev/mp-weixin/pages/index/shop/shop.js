@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/shop/shop"],{
 
-/***/ 106:
+/***/ 108:
 /*!**************************************************************************!*\
   !*** E:/website/uni-life/main.js?{"page":"pages%2Findex%2Fshop%2Fshop"} ***!
   \**************************************************************************/
@@ -144,5 +144,5 @@ var _default =
 
 /***/ })
 
-},[[106,"common/runtime","common/vendor"]]]);
+},[[108,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/shop/shop.js.map
