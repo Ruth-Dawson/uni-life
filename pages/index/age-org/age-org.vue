@@ -2,7 +2,7 @@
 	<view class="content">
 		<view class="module">
 			<view class="left">
-				<video src="@/static/video/yuehua.mp4" show-center-play-btn="true"></video>
+				<!-- <video src="@/static/video/short.mp4" show-center-play-btn="true"></video> -->
 			</view>
 			<view class="right">
 				<view class="orgName">

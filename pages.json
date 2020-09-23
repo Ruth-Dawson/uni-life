@@ -38,11 +38,10 @@
             "path" : "pages/circle/circle",
             "style" : {
 				"navigationStyle":"custom"
-				
 			}
         }
         ,{
-            "path" : "pages/news/news",
+            "path" : "pages/counsel/counsel",
             "style" : {
 				
 			}
@@ -122,6 +121,29 @@
         ,{
             "path" : "pages/circle/dynamic/dynamic",
             "style" : {}
+        }
+        ,{
+            "path" : "pages/circle/uVideo/uVideo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/circle/topic/topic",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/circle/talk/talk",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/circle/friend/friend",
+            "style" : {} 
+        }
+        ,{
+            "path" : "pages/circle/dynamic/addDynamic/addDynamic",
+            "style" : {
+				"navigationStyle":"custom"
+				
+			}
         }
     ],
 	"globalStyle": {

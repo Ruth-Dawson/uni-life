@@ -236,6 +236,7 @@
 			padding: 20rpx;
 			display: flex;
 			flex-wrap: wrap;
+			background-color: #f2f2f2;
 			.listLeft,
 			.listRight{
 				flex-grow: 1;

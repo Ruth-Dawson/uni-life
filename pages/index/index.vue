@@ -79,7 +79,7 @@
 							</view>
 							<view class="right">
 								<view class="title">
-									<text>基础版手工制作学习【面授hahA】</text></view>
+									<text>基础版手工制作学习【面授】</text></view>
 								<view class="area">
 									<text>秦淮区</text>
 								</view>
@@ -139,21 +139,11 @@
 				</swiper-item>
 				<swiper-item class="swiper-item" id="swiper-item">
 					<scroll-view scroll-y="true" class="swiper-item3">
-						<wish></wish>
-					</scroll-view>
-				</swiper-item>
-				<swiper-item class="swiper-item" id="swiper-item">
-					<scroll-view scroll-y="true" class="swiper-item4">
-						<age-org></age-org>
-					</scroll-view>
-				</swiper-item>
-				<swiper-item class="swiper-item" id="swiper-item">
-					<scroll-view scroll-y="true" class="swiper-item5">
 						<job></job>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item" id="swiper-item">
-					<scroll-view scroll-y="true" class="swiper-item6">
+					<scroll-view scroll-y="true" class="swiper-item4">
 						<shop></shop>
 					</scroll-view>
 				</swiper-item>
@@ -248,14 +238,6 @@
 					{
 						id:'travel',
 						name:'旅游旅居'
-					},
-					{
-						id:'wish',
-						name:'愿望清单'
-					},
-					{
-						id:'ageOrg',
-						name:'养老机构'
 					},
 					{
 						id:'job',

@@ -12,7 +12,7 @@
 	};
 </script>
 
-<style>
+<style lang="scss">
 
 @import './static/css/iconfont.css';
 /* 彩色图标使用icon-tools生成的iconfont-weapp-icon.css */
@@ -33,5 +33,22 @@
 	background-color: #FF9900;
 	z-index: 9999;
 }
+
+/* 顶部导航 固定再顶部 */
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+	.navItem{
+		
+	}
+}
+
 
 </style>
