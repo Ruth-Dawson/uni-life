@@ -47,7 +47,7 @@
 			}
         }
         ,{
-            "path" : "pages/mine/mine",
+            "path" : "pages/profile/profile",
             "style" : {
 				"app-plus":{
 					"background":"#f00"
@@ -90,62 +90,55 @@
 				}
 			}
         }
-        ,{
-            "path" : "pages/index/old-colleage/old-colleage",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/travel/travel",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/wish/wish",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/age-org/age-org",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/job/job",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/shop/shop",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/index/all/all",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/circle/dynamic/dynamic",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/circle/uVideo/uVideo",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/circle/topic/topic",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/circle/talk/talk",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/circle/friend/friend",
-            "style" : {} 
-        }
-        ,{
-            "path" : "pages/circle/dynamic/addDynamic/addDynamic",
-            "style" : {
-				"navigationStyle":"custom"
-				
-			}
-        }
     ],
+	"subPackages":[
+		{
+			"root":"subIndexPages",
+			"pages":[
+				{
+					"path":"college/college"
+				},
+				{
+					"path":"job/job"
+				},
+				{
+					"path":"org/org"
+				},
+				{
+					"path":"shop/shop"
+				},
+				{
+					"path":"travel/travel"
+				},
+				{
+					"path":"wish/wish"
+				}
+			]
+		},
+		{
+			"root":"subCirclePages",
+			"pages":[
+				{
+					"path":"dynamic/dynamic"
+				},
+				{
+					"path":"friend/friend"
+				},
+				{
+					"path":"talk/talk"
+				},
+				{
+					"path":"topic/topic"
+				},
+				{
+					"path":"uVideo/uVideo"
+				},
+				{
+					"path":"dynamic/addDynamic/addDynamic"
+				}
+			]
+		}
+	],
 	"globalStyle": {
 		"navigationStyle":"default",
 		"navigationBarTextStyle": "white",
@@ -191,7 +184,7 @@
 				"text":"消息",
 				"backgroundColor":"#f00"
 			},{
-				"pagePath":"pages/mine/mine",
+				"pagePath":"pages/profile/profile",
 				"iconPath":"static/img/mine.png",
 				"selectedIconPath":"static/img/mineSelected.png",
 				"text":"我的",

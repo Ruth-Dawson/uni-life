@@ -60,11 +60,11 @@
 
 <script>
 	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue"
-	import dynamic from "@/pages/circle/dynamic/dynamic.vue"
-	import talk from "@/pages/circle/talk/talk.vue"
-	import topic from "@/pages/circle/topic/topic.vue"
-	import uVideo from "@/pages/circle/uVideo/uVideo.vue"
-	import friend from "@/pages/circle/friend/friend.vue"
+	import dynamic from "@/subCirclePages/dynamic/addDynamic/addDynamic.vue"
+	import talk from "@/subCirclePages/talk/talk.vue"
+	import topic from "@/subCirclePages/topic/topic.vue"
+	import uVideo from "@/subCirclePages/uVideo/uVideo.vue"
+	import friend from "@/subCirclePages/friend/friend.vue"
 	export default {
 		components:{
 			uniNavBar,

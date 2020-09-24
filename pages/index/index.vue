@@ -129,7 +129,7 @@
 			    </swiper-item>
 				<swiper-item class="swiper-item " id="swiper-item" >
 					<scroll-view scroll-y="true" class="swiper-item1">
-						<old-colleage></old-colleage>
+						<college></college>
 					</scroll-view>
 			    </swiper-item>
 				<swiper-item class="swiper-item" id="swiper-item">
@@ -154,22 +154,20 @@
 
 <script>
 	import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
-	import oldColleage from '@/pages/index/old-colleage/old-colleage.vue'
-	import ageOrg from '@/pages/index/age-org/age-org.vue'
-	import job from '@/pages/index/job/job.vue'
-	import shop from '@/pages/index/shop/shop.vue'
-	import travel from '@/pages/index/travel/travel.vue'
-	import wish from '@/pages/index/wish/wish.vue'
-	import all from '@/pages/index/all/all.vue'
+	import college from '@/components/uni-sub-index/sub-college.vue'
+	import org from '@/components/uni-sub-index/sub-org.vue'
+	import job from '@/components/uni-sub-index/sub-job.vue'
+	import shop from '@/components/uni-sub-index/sub-shop.vue'
+	import travel from '@/components/uni-sub-index/sub-travel.vue'
+	import all from '@/components/uni-sub-index/sub-all.vue'
 	export default {
 		components:{
 			uniNavBar,
-			oldColleage,
-			ageOrg,
+			college,
+			org,
 			job,
 			shop,
 			travel,
-			wish,
 			all
 		},
 		data() {
