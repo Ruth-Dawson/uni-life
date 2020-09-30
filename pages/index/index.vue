@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<!-- 头部导航占位符 -->
+		<!-- 状态栏 -->
 		<view class="status_bar"></view>
 		<!-- 头部自定义导航栏 -->
 		<!-- <uni-nav-bar class="header" :fixed="true" color="#333333" background-color="#F90">
@@ -217,11 +217,6 @@
 						title:'格子铺',
 						iconfont:'t-icon-liwu',
 						backgroundColor:"#ffcc66"
-					},
-					{
-						title:'格子铺',
-						iconfont:'t-icon-liwu',
-						backgroundColor:"#ffcc66"
 					}
 				],
 				tabBars:[
@@ -258,7 +253,9 @@
 			this.getElementHeight('.swiper-item0');
 		},
 		onLoad() {
-			console.log("页面加载了");
+			
+		},
+		onShow() {
 		},
 		methods: {
 			showCity(){

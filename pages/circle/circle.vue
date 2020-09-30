@@ -35,7 +35,7 @@
 				</swiper-item>
 				<swiper-item>
 					<view class="swiper-item">
-						<u-video></u-video>
+						<s-video></s-video>
 					</view>
 				</swiper-item>
 				<swiper-item>
@@ -60,18 +60,18 @@
 
 <script>
 	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue"
-	import dynamic from "@/subCirclePages/dynamic/addDynamic/addDynamic.vue"
-	import talk from "@/subCirclePages/talk/talk.vue"
-	import topic from "@/subCirclePages/topic/topic.vue"
-	import uVideo from "@/subCirclePages/uVideo/uVideo.vue"
-	import friend from "@/subCirclePages/friend/friend.vue"
+	import dynamic from "@/components/uni-sub-circle/dynamic/dynamic.vue"
+	import talk from "@/components/uni-sub-circle/talk/talk.vue"
+	import topic from "@/components/uni-sub-circle/topic/topic.vue"
+	import sVideo from "@/components/uni-sub-circle/uVideo/uVideo.vue"
+	import friend from "@/components/uni-sub-circle/friend/friend.vue"
 	export default {
 		components:{
 			uniNavBar,
 			dynamic,
 			talk,
 			topic,
-			uVideo,
+			sVideo,
 			friend
 		},
 		data() {
@@ -171,7 +171,7 @@
 					}
 				}
 				swiper{
-					border: 1px solid red;
+					// border: 1px solid red;
 					height: 2700rpx;
 				}
 			}

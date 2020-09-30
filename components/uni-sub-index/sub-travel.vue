@@ -63,7 +63,6 @@
 		components:{
 		},
 		mounted() {
-			console.log("mounted加载了");
 			this.waterfall();  //初始化瀑布流
 		},
 		data() {
@@ -183,12 +182,9 @@
 			},
 			
 			waterfall(){
-				console.log("哈哈");
 				this.cardList = this.allcardList.slice(0,4);		//初始化图片显示
-				console.log(this.cardList);
 				this.cardListLeft.push(...this.cardList);			//初始化左侧显示四个
 				this.cardListRight.push(...this.cardList);			//初始化左侧显示四个
-				console.log(this.cardListLeft);
 				this.preLoadImg = this.cardList[0].url;
 				var that = this;
 				uni.getSystemInfo({		//利用uni-APP获取系统信息Api，获取客户端的屏幕高度，设置成scoll-view的高度，实现触底事件
@@ -200,7 +196,6 @@
 			
 			loadMore(){
 				if(this.loadMoreTemp == 1){			//loadMoreTemp==1,才允许触发
-					console.log("loadMore");
 					this.loadMoreTemp = 0;			//防止多次触发
 					
 					let newcardList = this.allcardList.slice(this.cardListItem,this.cardListItem+4);//模拟后端接口返回四个新的数据

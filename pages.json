@@ -1,4 +1,7 @@
 {
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [
 		{
 			"path": "pages/index/index",
@@ -39,16 +42,11 @@
             "style" : {
 				"navigationStyle":"custom"
 			}
-        }
-        ,{
-            "path" : "pages/counsel/counsel",
-            "style" : {
-				
-			}
-        }
-        ,{
+        },
+        {
             "path" : "pages/profile/profile",
             "style" : {
+				"navigationStyle":"custom",
 				"app-plus":{
 					"background":"#f00"
 				}
@@ -83,7 +81,6 @@
 							},
 							{
 								"text":"圈子"
-								// "float":"left",
 							}
 						]
 					}
@@ -93,48 +90,25 @@
     ],
 	"subPackages":[
 		{
-			"root":"subIndexPages",
+			"root":"views",
 			"pages":[
 				{
-					"path":"college/college"
+					"path":"lists/college/college"
 				},
 				{
-					"path":"job/job"
+					"path":"lists/job/job"
 				},
 				{
-					"path":"org/org"
+					"path":"lists/org/org"
 				},
 				{
-					"path":"shop/shop"
+					"path":"lists/shop/shop"
 				},
 				{
-					"path":"travel/travel"
+					"path":"lists/travel/travel"
 				},
 				{
-					"path":"wish/wish"
-				}
-			]
-		},
-		{
-			"root":"subCirclePages",
-			"pages":[
-				{
-					"path":"dynamic/dynamic"
-				},
-				{
-					"path":"friend/friend"
-				},
-				{
-					"path":"talk/talk"
-				},
-				{
-					"path":"topic/topic"
-				},
-				{
-					"path":"uVideo/uVideo"
-				},
-				{
-					"path":"dynamic/addDynamic/addDynamic"
+					"path":"lists/wish/wish"
 				}
 			]
 		}
@@ -148,7 +122,6 @@
 		"backgroundColorTop":"#007AFF"
 	},
 	"tabBar":{
-		"color":"#1B1B1B",
 		"list":[
 			{
 				"pagePath":"pages/index/index",
@@ -161,35 +134,51 @@
 				"selectedIconPath":"static/img/circleSelected.png",
 				"text":"圈子"
 			},
-			 //#ifdef MP-WEIXIN
-            {
-                "pagePath": "pages/middle/middle",
-                "iconPath": "static/img/add.png",
-                "selectedIconPath": "static/img/addactive.png",
-                "text": "发布"
-            },
-            //#endif
-            //#ifndef MP-WEIXIN
-            {
-                "pagePath": "pages/middle/middle",
-                "iconPath": "static/img/add.png",
-                "selectedIconPath": "static/img/addactive.png",
-				"backgroundColor":"$theme-color"
-            },
-            //#endif
+			 // //#ifdef MP-WEIXIN
+    //         {
+    //             "pagePath": "pages/middle/middle",
+    //             "iconPath": "static/img/btn-middle.png",
+    //             "selectedIconPath": "static/img/btn-middle.png",
+    //             "text": "发布"
+    //         },
+    //         //#endif
+    //         //#ifndef MP-WEIXIN
+    //         {
+    //             "pagePath": "pages/middle/middle",
+    //             "iconPath": "static/img/btn-middle.png",
+    //             "selectedIconPath": "static/img/btn-middle.png",
+				// "backgroundColor":"$theme-color"
+    //         },
+    //         //#endif
 			{
 				"pagePath":"pages/info/info",
 				"iconPath":"static/img/news.png",
 				"selectedIconPath":"static/img/newsSelected.png",
-				"text":"消息",
-				"backgroundColor":"#f00"
+				"text":"消息"
 			},{
 				"pagePath":"pages/profile/profile",
-				"iconPath":"static/img/mine.png",
-				"selectedIconPath":"static/img/mineSelected.png",
-				"text":"我的",
-				"color":"#fff"
+				"iconPath":"static/img/mine1.png",
+				"selectedIconPath":"static/img/mine1Selected.png",
+				"text":"我的"
 			}
-		]
+		],
+		"midButton":{
+			"iconPath":"static/img/btn-middle.png" ,
+			"width":"80",
+			"height":"50",
+			"iconWidth":"55"
+		},
+		"color":"#1B1B1B",
+		"selectedColor":"#efb336"
 	}
+	// "condition" : { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [
+	// 		{
+	// 			"name": "我的", //模式名称
+	// 			"path": "pages/index/index", //启动页面，必选
+	// 			"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 		}
+	// 	]
+	// }
 }

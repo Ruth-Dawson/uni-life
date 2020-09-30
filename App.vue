@@ -2,30 +2,33 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch');
+			// #ifdef APP-PLUS
+			plus.screen.lockOrientation('portrait-primary'); //锁定竖屏正方向
+			// #endif
 		},
 		onShow: function() {
 			console.log('App Show');
 		},
 		onHide: function() {
 			console.log('App Hide');
+		},
+		globalData:{
+			userName:'白居易'
 		}
 	};
 </script>
 
 <style lang="scss">
+//引入uView基础样式 
+@import "uview-ui/index.scss";
 
-@import './static/css/iconfont.css';
-/* 彩色图标使用icon-tools生成的iconfont-weapp-icon.css */
-@import './static/css/iconfont-weapp-icon.css';
+// @import "https://at.alicdn.com/t/font_1841210_61dmzue8ag9.css";
 
-/* 解决头条小程序组件内引入字体不生效的问题 */
-/* #ifdef MP-TOUTIAO */
-@font-face {
-	font-family: uniicons;
-	src: url('/static/uni.ttf');
-}
-/* #endif */
+@import 'static/css/iconfont.css';
 
+
+@import "./static/css/iconfont-weapp-icon.css";
+// 彩色图标使用icon-tools生成的iconfont-weapp-icon.css
 
 .status_bar{
 	height: var(--status-bar-height);
